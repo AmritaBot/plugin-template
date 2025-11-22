@@ -9,10 +9,6 @@ requires-python = ">=3.10, <3.14"
 [tool.nonebot]
 plugins = [
     "nonebot_plugin_orm",
-    "amrita.plugins.chat",
-    "amrita.plugins.manager",
-    "amrita.plugins.menu",
-    "amrita.plugins.perm",
     "your_plugin_name",
 ]
 plugin_dirs = []
