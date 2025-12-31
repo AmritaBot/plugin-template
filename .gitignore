@@ -178,3 +178,11 @@ pyrightconfig.json
 # DOTENV
 .env.prod
 .env.dev
+.env.*
+.env
+
+# Amrita
+
+logs/*
+data/*
+config/*

@@ -25,6 +25,7 @@ jobs:
         run: |
           uv venv
           uv sync
+          uv pip install .
 
       - name: Get Python path
         run: |
@@ -40,7 +41,7 @@ jobs:
         run: |
           source ./.venv/bin/activate
           echo "DATABASE_URL=aiosqlite+:///db.sqlite3" > .env
-          uv run nb orm upgrade
+          amrita orm upgrade
       - name: Run Load Test
         run: |
           echo "ADMIN_GROUP=1" >> .env
